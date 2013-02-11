@@ -1,43 +1,40 @@
-Type of Mod
-------------
-Quake C : yes
-Sound   : yes
-Models  : yes
+Quake Portal Gun
+================
 
-Format of QuakeC
-----------------
-.qc files : yes
-progs.dat : yes
+Compiling and usage
+--------------------
+Use any QuakeC compiler. 
+There is fteqcc (https://github.com/xonotic/fteqcc) in debian repositories.
 
-How to install
---------------
-Easily. Just download the portal_gun package, enter your quake directory
-and extract it. Then you can run:
+After that, you can run the mod with
 
+`
 $ quake -game portal_gun
+`
 
 For demonstration, toggle console and type 'playdemo portal'.
 
 Description
 -----------
-	Portal Gun (Handheld Portal Device) is a device that creates
+Portal Gun (Handheld Portal Device) is a device that creates
 and inter-spatial portal (wormhole) in level. It is quaked version of the
 gun from game Portal (part of Orange box) by Valve software <www.valvesoftware.com>
 also implemented in some half-life games. Ussage is simple: fire with the portal
 gun to the desired locations to opend first and second portals. Now, the wormhole
 is created between them. You can enter it, or close it down.
 
-	This mod tries to simulate (poorly) the physic as seen in original Portal game.
+This mod tries to simulate (poorly) the physic as seen in original Portal game.
 That means, when you enter the first portal, your velocity and angles is restored
-on the other side of wormhole. This allows you to do big jumps and other tricks (see fig. 1).
+on the other side of wormhole. This allows you to do big jumps and other tricks.
 
-	Teleporting of pickups is possible, which allows interesting strategies (like
+Teleporting of pickups is possible, which allows interesting strategies (like
 gathering pickups on one place and the pick them all up at once; or reaching
 distant items just by shooting at them.)
 
-	Portal Gun can also be used as item carrier. Simply aim the item and 
+Portal Gun can also be used as item carrier. Simply aim the item and 
 press 'f'. To drop carried item, press 'f' again.
 
+```
 Fig. 1 - Example of clever usage of portal gun - power of gravity:
 (see 'tricks' file for more)
 *EXIT*
@@ -58,6 +55,7 @@ ___________/  | 2      ,.,   and the higher one will shoot you up (arrow 2)
                    |  /'----'-- - -
                    | /     (_)
                    |/_________ _ _
+```
 
 Portal gun modes
 ----------------
@@ -70,12 +68,9 @@ Portal gun mod includes two modes: deathmatch and cooperative variant.
 - In deathmatch, every portal gun can create one wormhole;
   so number of possible wormholes in game equals number of players.
 
-!! NOTE: please make sure, that all portals are closed before changing mode to
-avoid an unexpected behavior.
-
 Why I made it
 -------------
-That's simple question. My computer is too slow for running the original Valve's
+My computer is too slow for running the original Valve's
 Portal game, but I love the YouTube videos and generally the gameplay of it. 
 The first version of portal mod by Lag.Com was designed for making incredible 
 fast speed demos (see <http://speeddemosarchive.com> - SDA; great site!).
