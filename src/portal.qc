@@ -641,7 +641,6 @@ void() Portal1Touch =
 
 	vel=vlen(other.velocity) + PORTAL_KICK;
 	oldvel = other.velocity;
-    //FIXME: see todo section 4
 			
 	org=portal_clip_player(portal2_entity);
 
@@ -685,7 +684,6 @@ void() Portal2Touch =
 	
 	vel=vlen(other.velocity) + PORTAL_KICK;
 	oldvel = other.velocity;
-    //FIXME:see todo section 4
 		
 	org=portal_clip_player(portal1_entity);
 		
