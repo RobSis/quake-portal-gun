@@ -1,0 +1,75 @@
+TreeQBSP v2.05 -- 
+
+modified by Greg Lewis
+modified by Bengt Jardrup
+Linux port by gb
+
+Input file: phystest.map
+Output file: ../../../id1-common/maps/phystest.bsp
+---- LoadMapFile ----
+*** WARNING 06: No info_player_deathmatch entities in level
+           84 faces
+           14 brushes
+            4 entities
+            5 unique texnames
+           15 texinfo
+
+Building hulls sequentially...
+Processing hull 0...
+---- Brush_LoadEntity ----
+           14 brushes
+---- CSGFaces ----
+           84 brushfaces
+          125 csgfaces
+          134 mergedfaces
+---- SolidBSP ----
+          267 split nodes
+           84 solid leafs
+          175 empty leafs
+            9 water leafs
+          931 leaffaces
+          924 nodefaces
+---- FillOutside ----
+          121 outleafs
+---- MergeAll ----
+           89 mergefaces
+---- SolidBSP ----
+           42 split nodes
+           13 solid leafs
+           29 empty leafs
+            1 water leafs
+          480 leaffaces
+          350 nodefaces
+---- Portalize ----
+           30 vis leafs
+          102 vis portals
+---- Tjunc ----
+          176 world edges
+          954 edge points
+          202 edges added by tjunctions
+            0 faces added by tjunctions
+---- MakeFaceEdges ----
+---- GrowRegions ----
+Processing hull 1...
+Processing hull 2...
+---- WriteBSPFile ----
+           93 planes         1860
+          425 vertexes       5100
+           42 nodes          1008
+           15 texinfo         600
+          350 faces          7000
+          185 clipnodes      1480
+           31 leafs           868
+          480 marksurfaces    960
+         1602 surfedges      6408
+          802 edges          3208
+            5 textures      99504
+              lightdata         0
+              visdata           0
+              entdata         322
+
+1 warning
+
+Elapsed time : 0:00
+
+Peak memory used : 0.3 MB

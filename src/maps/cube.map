@@ -1,0 +1,51 @@
+{
+"classname" "worldspawn"
+"classname" "worldspawn"
+"sounds" "1"
+"mapversion" "220"
+"wad" "id_base.wad"
+{
+( 0 0 32 ) ( 0 32 32 ) ( 32 32 32 ) +3_LAVA0 [ 1 0 0 -4 ] [ 0 -1 0 4 ] 0 1 1 
+( 0 32 0 ) ( 0 0 0 ) ( 32 0 0 ) +0_LAVA0 [ 1 0 0 -4 ] [ 0 -1 0 4 ] 0 1 1 
+( 0 0 0 ) ( 0 32 0 ) ( 0 32 32 ) +3_LAVA0 [ 0 1 0 -4 ] [ 0 0 -1 4 ] 0 1 1 
+( 32 32 0 ) ( 32 0 0 ) ( 32 0 32 ) +0_LAVA0 [ 0 1 0 -4 ] [ 0 0 -1 4 ] 0 1 1 
+( 0 32 0 ) ( 32 32 0 ) ( 32 32 32 ) +2_LAVA0 [ 1 0 0 -4 ] [ 0 0 -1 4 ] 0 1 1 
+( 32 0 0 ) ( 0 0 0 ) ( 0 0 32 ) +0_LAVA0 [ 1 0 0 -4 ] [ 0 0 -1 4 ] 0 1 1 
+}
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "-16 16 16"
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "48 16 16"
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "16 16 48"
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "16 48 16"
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "16 -16 16"
+}
+{
+"classname" "light"
+"light" "300"
+"wait" "1"
+"origin" "16 16 -16"
+}
