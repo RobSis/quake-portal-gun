@@ -1,34 +1,29 @@
-/* Aperture Science Cube
+// Licensed under the terms of the GPL v2. See doc/COPYING for details
+// Inspired by Wazat's 'pushable' code from inside3d.com
 
-   Copyleft (<)2010. 
-   None rights reserved.
-   DO distribute.
 
-   Inspired by Wazat's code from inside3d.com
-*/
-
-void() asscube_think =
+void() asscube_think = 
 {
     self.nextthink = time;
 };
 
-void() asscube_push =
+void() asscube_push = 
 {
     local vector vec, selforg, otherorg;
     local float dist; dist = 2;
  
     if (other.classname != "player") return;
-    if (other.absmin_z + 4 < self.absmax_z)
+    if (other.absmin_z + 4 < self.absmax_z) 
     {
-           // getting origins this way allows for BSP entities to work too.
-           otherorg = 0.5*(other.absmin + other.absmax);
-           selforg = 0.5*(self.absmin + self.absmax);
+        // getting origins this way allows for BSP entities to work too.
+        otherorg = 0.5*(other.absmin + other.absmax);
+        selforg = 0.5*(self.absmin + self.absmax);
 
-           // Don't move in the direction the player is facing. Instead, always move away from the player.
-           vec = normalize(selforg - otherorg); // dir from them toward me
-           vec = vectoangles(vec);
-//           self.flags = self.flags - FL_ONGROUND;
-           walkmove(vec_y, dist);
+        // Don't move in the direction the player is facing. Instead, always move away from the player.
+        vec = normalize(selforg - otherorg); // dir from them toward me
+        vec = vectoangles(vec);
+        //self.flags = self.flags - FL_ONGROUND;
+        walkmove(vec_y, dist);
     }
     else // (touch on top)
     {
@@ -39,9 +34,10 @@ void() asscube_push =
 /*QUAKED ass_cube (0 0 1) (0 0 0) (32 32 32)
   Companion Cube
 */
-void() ass_cube =
+void() ass_cube = 
 {
         local entity new;
+
         local vector newsize;
 
         self.mangle = self.angles;

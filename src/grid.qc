@@ -14,9 +14,9 @@ void () particlefield_XZ =
 	local vector start;
 	local vector end;
 
-	if ( ( self.spawnflags & USE_COUNT ) &&
-		( counter_GetCount( other ) != self.cnt ) )
-	      return;
+	if ((self.spawnflags & USE_COUNT) &&
+		(counter_GetCount( other ) != self.cnt))
+        return;
 
 	self.ltime = time + 0.25;
 	if ( self.noise )
@@ -24,8 +24,8 @@ void () particlefield_XZ =
 
 	// Only show particles if client is visible.
 	// This helps to keep network traffic down to a minimum.
-	if (!checkclient() )
-		return;
+	if (!checkclient())
+        return;
 
 	start = self.dest1 + self.origin;
 	end   = self.dest2 + self.origin;
@@ -33,8 +33,8 @@ void () particlefield_XZ =
 	pos_z = start_z;
 	while( pos_z <= end_z )
 	{
-	      pos_x = start_x;
-	      while( pos_x <= end_x )
+	    pos_x = start_x;
+	    while( pos_x <= end_x )
 		{
 			particle ( pos, '0 0 0', self.color, self.count );
 			pos_x = pos_x + 16;
@@ -49,18 +49,18 @@ void () particlefield_YZ =
 	local vector start;
 	local vector end;
 
-	if ( ( self.spawnflags & USE_COUNT ) &&
-		( counter_GetCount( other ) != self.cnt ) )
-	      return;
+	if ((self.spawnflags & USE_COUNT) &&
+		(counter_GetCount( other ) != self.cnt))
+        return;
 
 	self.ltime = time + 0.25;
 	if ( self.noise )
-	      sound(self, CHAN_VOICE, self.noise, 1, ATTN_NORM);
+        sound(self, CHAN_VOICE, self.noise, 1, ATTN_NORM);
 
 	// Only show particles if client is visible.
 	// This helps to keep network traffic down to a minimum.
-	if (!checkclient() )
-		return;
+	if (!checkclient())
+        return;
 
 	start = self.dest1 + self.origin;
 	end   = self.dest2 + self.origin;
@@ -68,8 +68,8 @@ void () particlefield_YZ =
 	pos_z = start_z;
 	while( pos_z < end_z )
 	{
-	      pos_y = start_y;
-	      while( pos_y < end_y )
+        pos_y = start_y;
+	    while( pos_y < end_y )
 		{
 			particle ( pos, '0 0 0', self.color, self.count );
 			pos_y = pos_y + 16;
@@ -240,10 +240,10 @@ void() func_togglewall =
 	setorigin (self, self.origin);
 	self.touch = blocker_touch;
 	self.use = blocker_use;
-	if ( !self.noise )
-	      self.noise = ("misc/null.wav");
-	if ( !self.noise1 )
-	      self.noise1 = ("misc/null.wav");
+	if (!self.noise)
+	     self.noise = ("misc/null.wav");
+	if (!self.noise1)
+	    self.noise1 = ("misc/null.wav");
 
 	precache_sound( self.noise );
 	precache_sound( self.noise1 );
@@ -251,13 +251,13 @@ void() func_togglewall =
 	self.solid = SOLID_BSP;
 	self.model = string_null;
 	if ( self.spawnflags & START_OFF )
-      {
-	      self.state = 0;
-	      setorigin( self, self.origin + '8000 8000 8000' );
-      }
+    {
+        self.state = 0;
+	    setorigin( self, self.origin + '8000 8000 8000' );
+    }
 	else
-      {
-	      self.state = 1;
-	      sound(self, CHAN_VOICE, self.noise1, 1, ATTN_NORM);
-      }
+    {
+        self.state = 1;
+	    sound(self, CHAN_VOICE, self.noise1, 1, ATTN_NORM);
+    }
 };

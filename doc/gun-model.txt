@@ -1,0 +1,18 @@
+Description: Original Portal Gun made for the Portal Gun Mod for Quake created by Robert Siska
+Author: Antonio "toneddu2000" Latronico
+License: Creative Commons Attribution-ShareAlike 3.0 Unported
+Version: 1.0.0
+The .zip file contains:
+portal_gun_v_1_0_0.blend file of the weapon, full textured but not rigged
+color.psd file for color/diffuse texture
+normal_map.psd for normal map
+glow.psd for glow map
+normal_map.ai for normal map
+metal_details.ai for metal details
+License.txt Licensing info
+README.TXT this file
+
+Use it for everything you like it.
+
+maintainer's note: This ZIP is way too big to be included in software package.
+You can contact authors (see doc/AUTHORS), if you're interested in package.

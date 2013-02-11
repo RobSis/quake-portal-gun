@@ -1,7 +1,4 @@
-/********************************************
-  Aperture Science Technologies (asstech.qc)
-  ==========================================
-********************************************/
+// Licensed under the terms of the GPL v2. See doc/COPYING for details
 
 // for for hardlight bridge
 float HL_STARTOFF = 1;

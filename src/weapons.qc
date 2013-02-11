@@ -952,10 +952,11 @@ void() W_Attack =
 		self.attack_finished = time + 0.1;
 		sound (self, CHAN_AUTO, "weapons/lstart.wav", 1, ATTN_NORM);
 	}
-	else if (self.weapon == IT_PORTAL_GUN) {
+	else if (self.weapon == IT_PORTAL_GUN)
+    {
 		player_portal1();
 		self.attack_finished = time + 0.8;
-        }
+    }
 };
 
 /*

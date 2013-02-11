@@ -1,0 +1,55 @@
+-----------------------------------------------------------------
+Thu Aug  4 14:20:19 2011 
+	* progs/v_portal.mdl:
+	New skin.
+
+	* source/asstech.qc:
+	Various Aperture Science-like technologies.
+
+Sat Sep 20 13:39:56 2008
+	* progs/v_portal.mdl:
+	Added new Portal gun model inspired by Valve's
+
+	* source/portal.qc:
+	Minor changes in Item carrier
+
+Sat Sep  6 15:05:25 2008  
+	* source/portal.qc:
+	Item carrier implemented (poorly).
+	
+Sat Sep  6 08:23:37 2008  
+	* source/portal.qc:
+	Teleporting of pickups (MOVETYPE_TOSS) implemented.
+
+Wed Sep  3 08:12:07 2008  
+	* source/*:
+	Converted to Clean-v106qc code
+
+Wed Aug 20 16:09:15 2008  
+	* source/portal.qc:
+	Two more impulses added. Possibility of firing arbitrary portal in any time. Good for repositioning.
+	* progs/portal1.bsp, progs/portal2.bsp:
+	New oval models.
+	
+
+Sun Aug 10 11:41:25 2008  
+	* source/portal.qc:
+	Cooperative and deathmatch modes implemented. Changing during the
+	gameplay allowed.
+
+
+Sun Aug  3 14:25:08 2008  
+	* doc/changelog:
+	Created new changelog for version 2.0
+
+	* doc/:
+	Created files: AUTHORS, COPYING, COPYING.CZ, README, TODO, BUGS
+	Plus file_id.diz with short description.
+
+	* source/*:
+	Lag.com's portal.qc fused with my mod portal-gun_v1.0. 
+	Now compatibile with original iD's v101qc source.
+	Compilable with original iD's qcc compiler.
+
+	* autoexec.cfg:
+	autoexec.cfg with keybindings now included

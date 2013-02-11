@@ -1,0 +1,103 @@
+-=-=-=-=-=-=-=-=-=-=-=-
+Information for Mappers
+=-=-=-=-=-=-=-=-=-=-=-=
+
+You can find all the map sources in   src/maps/
+The maps use id_base.wad and portal.wad. Both present in the same directory.
+
+
+
+Entities
+========
+______________________________________
+ass_hardlight ? START_OFF PORTAL_PROOF
+--------------------------------------
+  Creates a invisible wall that can be toggled on and off.
+
+  START_OFF      wall doesn't block until triggered.
+  PORTAL_PROOF   when the wall is toggled, you can't shoot portal through it.
+
+
+NOTE, that it is truly invisible. It's best to combine with particlefield, so
+player can see what's blocking him... The same goes for other energy grills.
+
+______________________________
+func_particlefield ? USE_COUNT
+------------------------------
+   Creates a brief particle flash roughly the size of the defining
+   brush each time it is triggered.
+
+  USE_COUNT when the activator is a func_counter, the field will only
+      activate when count is equal to "cnt".  Same as using a func_oncount
+      to trigger.
+
+  "cnt" is the count to activate on when USE_COUNT is set.
+  "color" is the color of the particles.  Default is 192 (yellow).
+  "count" is the density of the particles.  Default is 2.
+  "noise" is the sound to play when triggered.  Do not use a looping sound here.
+  "dmg" is the amount of damage to cause when touched.
+
+
+NOTE about colors. The number of colors is limited. We can use yellow (192)
+Use counter to make some neat cycle effects. (see pellet.map for example)
+
+
+_______________
+ass_portalproof
+---------------
+   Creates the wall, that can't bear portals. Defined by brush.
+
+There is texture for portal-proof walls in portal.wad
+
+_________
+ass_grill
+---------
+   Material Emancipation Grill
+     - disintegrates every object but player and his gun. TODO
+     - reboots gun (closes portals)
+
+
+________________
+ass_gravitygrill
+----------------
+    Grill that changes gravity when touched by player.
+
+    "gravity" - what to set the player's gravity to
+       - 0 (default) normal gravity
+       - 1 no gravity
+       - 2 almost no gravity
+         ...
+       - 101 normal gravity
+       - 102 slightly higher gravity
+         ...
+       - 1000 very high gravity
+
+     the same goes subzero ;)
+
+NOTE: changing gravity wasn't implemented until hipnotic's expansion pack.
+So the original dos quake ( v1.06 ) engine doesn't support it...
+NOTE: also note, that player can "take" gravity with him...
+Anyway, this entity is experimental, don't have to be used at all...
+
+
+_____________
+ass_killgrill
+-------------
+    Grill that hurts player when touched.
+
+    "dmg" - amount of damage to cause to player.
+            default - 100
+
+
+__________________
+ass_pelletlauncher
+------------------
+    High-Energy Pellet Launcher
+
+    "wait" - delay before first shot [0]
+    "ttl"  - time to live [180]
+
+________
+ass_cube
+--------
+    Experimental and not working at all :(
