@@ -1,16 +1,10 @@
-Type of Mod
-------------
-Quake C : yes
-Sound   : yes
-Models  : yes
+Quake Portal Gun
+================
 
-Format of QuakeC
-----------------
-.qc files : yes
-progs.dat : yes
+Compiling
+---------
+Use any QuakeC compiler. [fteqcc](https://github.com/xonotic/fteqcc)
 
-How to install
---------------
 Easily. Just download the portal_gun package, enter your quake directory
 and extract it. Then you can run:
 
