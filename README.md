@@ -1,19 +1,6 @@
 Quake Portal Gun
 ================
 
-Compiling and usage
---------------------
-Use any QuakeC compiler. 
-There is fteqcc (https://github.com/xonotic/fteqcc) in debian repositories.
-
-After that, you can run the mod with
-
-`
-$ quake -game portal_gun
-`
-
-For demonstration, toggle console and type 'playdemo portal'.
-
 Description
 -----------
 Portal Gun (Handheld Portal Device) is a device that creates
@@ -68,26 +55,25 @@ Portal gun mod includes two modes: deathmatch and cooperative variant.
 - In deathmatch, every portal gun can create one wormhole;
   so number of possible wormholes in game equals number of players.
 
-Why I made it
--------------
-My computer is too slow for running the original Valve's
-Portal game, but I love the YouTube videos and generally the gameplay of it. 
-The first version of portal mod by Lag.Com was designed for making incredible 
-fast speed demos (see <http://speeddemosarchive.com> - SDA; great site!).
-My mod was made independently and each mod had pros and cons 
-(thanks for Mark "Markzilla" Ehlke for summary). 
 
-First version of this mod was v2.0 although there was no 1.0.
-It is fusion of two independently made portal gun mods.
+Compiling and usage
+--------------------
+Use any QuakeC compiler. 
+The fteqcc (https://github.com/xonotic/fteqcc) is even in debian repositories.
 
-Appeal
-------
-Note, that the mod is still in development phase.
-This is my very first quake mod, so I would like to ask anybody for helping me
-with models, levels and other things from TODO section.
+After that, you can run the mod with
 
-On the other hand, feel free to use this gun in your mod!
-Just give me a credit :)
+`
+$ quake -game quake-portal-gun
+`
+
+For demonstration, toggle console and type 'playdemo portal'.
+
+Maps can be compiled by Quake Utils.
+(https://github.com/id-Software/Quake-Tools/tree/master/qutils)
+
+They use portal.wad, which is included, and base.wad from original game data.
+
 
 Commands
 --------
@@ -100,14 +86,41 @@ impulse 94 - use item carrier
 
 Portal Gun mod should contain autoexec.cfg file, where he keybindings are set.
 Controls defined in autoexec.cfg:
-
+```
  [Q][W][E][R] ... [P]
   [A][S][D][F] 
-
+```
 P - use Portal Gun
+
 R - close portals
+
 Q - fire blue portal
+
 E - fire red portal
+
 F - use item carrier
+
 'portal_mode' - toggle deathmatch/cooperative mode
 
+
+Why I made it
+-------------
+My computer is too slow for running the original Valve's
+Portal game, but I love the YouTube videos and generally the gameplay of it. 
+The first version of portal mod by Lag.Com was designed for making incredible 
+fast speed demos (see <http://speeddemosarchive.com> - SDA; great site!).
+My mod was made independently and each mod had pros and cons 
+(thanks for Mark "Markzilla" Ehlke for summary). 
+
+First version of this mod was v2.0 although there was no 1.0.
+It is fusion of two independently made portal gun mods.
+
+
+Appeal
+------
+Note, that the mod is still in development phase.
+This is my very first quake mod, so I would like to ask anybody for helping me
+with models, levels and other things from TODO section.
+
+On the other hand, feel free to use this gun in your mod!
+Just give me a credit :)

@@ -1,6 +1,6 @@
 {
 "classname" "worldspawn"
-"wad" "id_base.wad"
+"wad" "gfx/base.wad"
 {
 ( 2 13 45 ) ( 2 24 35 ) ( 2 31 19 ) CITY2_1 0 0 0 1.000000 1.000000
 ( 0 0 49 ) ( 0 -13 46 ) ( 0 -24 35 ) CITY2_1 0 0 0 1.000000 1.000000

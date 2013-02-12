@@ -3,7 +3,7 @@
 "classname" "worldspawn"
 "sounds" "1"
 "mapversion" "220"
-"wad" "id_base.wad"
+"wad" "gfx/base.wad"
 {
 ( 0 0 32 ) ( 0 32 32 ) ( 32 32 32 ) +3_LAVA0 [ 1 0 0 -4 ] [ 0 -1 0 4 ] 0 1 1 
 ( 0 32 0 ) ( 0 0 0 ) ( 32 0 0 ) +0_LAVA0 [ 1 0 0 -4 ] [ 0 -1 0 4 ] 0 1 1 

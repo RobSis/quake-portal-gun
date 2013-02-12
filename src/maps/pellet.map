@@ -4,7 +4,7 @@
 "sounds" "1"
 "mapversion" "220"
 "mapversion" "220"
-"wad" "id_base.wad;portal.wad"
+"wad" "gfx/base.wad;portal.wad"
 {
 ( -160 -896 -32 ) ( -848 -896 -32 ) ( -848 -896 328 ) FLOOR3 [ 1 0 0 0 ] [ 0 0 -1 0 ] 0 1 1 
 ( -160 -896 328 ) ( -848 -896 328 ) ( -848 -864 328 ) FLOOR3 [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1 

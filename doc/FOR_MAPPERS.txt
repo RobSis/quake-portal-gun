@@ -3,9 +3,9 @@ Information for Mappers
 =-=-=-=-=-=-=-=-=-=-=-=
 
 You can find all the map sources in   src/maps/
-The maps use id_base.wad and portal.wad. Both present in the same directory.
+The maps use base.wad from the vanilla and portal.wad, which is included.
 
-
+Btw, 'ass' stands for Aperture Science Stuff - it's not just a profanity :)
 
 Entities
 ========
