@@ -1,5 +1,6 @@
 // Licensed under the terms of the GPL v2. See doc/COPYING for details
 
+
 //// Constants
 float 		PORTAL_ATTACK		= 0.5;
 float		PORTAL_REFIRE		= 0.2;
