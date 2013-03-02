@@ -28,7 +28,7 @@ float PELLET_TTL = 20;
 void() counter_on_use;
 void() counter_off_use;
 
-void() counter_think =
+   void() counter_think =
 {
         self.cnt = self.cnt + 1;
         if ( self.spawnflags & COUNTER_RANDOM )
@@ -695,5 +695,5 @@ void () ass_pelletlauncher =
   High-Energy Pellet Catcher
 */
 //void () ass_pelletcatcher = {
-//	  self.classname = "ass_pelletcatcher";
+//        self.classname = "ass_pelletcatcher";
 //};
