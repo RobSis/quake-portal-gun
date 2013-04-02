@@ -1,0 +1,13 @@
+# /
+/config.cfg
+/progs.lno
+
+# /src/
+/src/fteqcc.log
+/src/tags
+
+# /src/maps/
+/src/maps/*.pts
+/src/maps/*.bsp
+/src/maps/*.h1
+/src/maps/*.h2
