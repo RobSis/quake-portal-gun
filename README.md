@@ -77,12 +77,12 @@ They use portal.wad, which is included, and base.wad from original game data.
 
 Commands
 --------
-impulse 99 - use Portal Gun
-impulse 98 - close portals down
-impulse 97 - toggle deathmatch/cooperative mode
-impulse 96 - fire blue portal
-impulse 95 - fire red portal
-impulse 94 - use item carrier
+* impulse 99 - use Portal Gun
+* impulse 98 - close portals down
+* impulse 97 - toggle deathmatch/cooperative mode
+* impulse 96 - fire blue portal
+* impulse 95 - fire red portal
+* impulse 94 - use item carrier
 
 Portal Gun mod should contain autoexec.cfg file, where he keybindings are set.
 Controls defined in autoexec.cfg:
