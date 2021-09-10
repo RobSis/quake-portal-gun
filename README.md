@@ -86,41 +86,16 @@ Commands
 
 Portal Gun mod should contain autoexec.cfg file, where he keybindings are set.
 Controls defined in autoexec.cfg:
-```
- [Q][W][E][R] ... [P]
-  [A][S][D][F] 
-```
-P - use Portal Gun
 
-R - close portals
+X - use Portal Gun
 
-Q - fire blue portal
+ALT - close portals
 
-E - fire red portal
+Z - fire blue portal
 
-F - use item carrier
+C - fire red portal
+
+G - use item carrier
 
 'portal_mode' - toggle deathmatch/cooperative mode
 
-
-Why I made it
--------------
-My computer is too slow for running the original Valve's
-Portal game, but I love the YouTube videos and generally the gameplay of it. 
-The first version of portal mod by Lag.Com was designed for making incredible 
-fast speed demos (see <http://speeddemosarchive.com> - SDA; great site!).
-My mod was made independently and each mod had pros and cons 
-(thanks for Mark "Markzilla" Ehlke for summary). 
-
-First version of this mod was v2.0 although there was no 1.0.
-It is fusion of two independently made portal gun mods.
-
-
-Appeal
-------
-Note, that the mod is still in development phase.
-This is my very first quake mod, so I would like to ask anybody for helping me
-with models, levels and other things from TODO section.
-
-On the other hand, feel free to use this gun in your mod!
-Just give me a credit :)
